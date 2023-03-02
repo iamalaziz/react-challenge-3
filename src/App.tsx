@@ -1,13 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import EasyScreen from './pages/EasyScreen';
+import HomeScreen from './pages/HomeScreen';
+
 function App() {
   return (
-    <div className="App">
-      <h1>Choose difficulty Level</h1>
-      <div className="level_container">
-        <span className="level"></span>
-        <span className="level"></span>
-        <span className="level"></span>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/easy" element={<EasyScreen />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,16 +1,22 @@
-
+html,
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  font-family: karla !important;
+}
 
 h1 {
   text-align: center;
 }
-span {
+button {
   display: block;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
   background-color: antiquewhite;
 }
-.level_container {
+.level-container {
   display: flex;
   gap: 5rem;
   width: 100%;
@@ -18,3 +24,15 @@ span {
   justify-content: center;
   align-items: center;
 } 
+table {
+  width: 100%;
+  border: 1px solid black;
+  height: 100vh;
+}
+table tr td {
+  cursor: pointer;
+  border: 2px solid #17e9e0;
+}
+.selected {
+  background-color: #17e9e0;
+}
